@@ -3,7 +3,6 @@ import time
 import random
 from typing import Set, cast
 import termcolor
-import playsound
 
 keeploop2 = 11
 room2progression = 0
@@ -52,10 +51,20 @@ def happiness(happyCheck):
     if happyCheck == "happiness":
         happinessbar()
 
-def debugmode():
-    print ("setchapter is - ", setchapter)
-    print ("room2progression is - ", room2progression)
-    print ("room3empty is - ", room3empty)
+
+def easteregg1():
+    print ("Oh cool")
+    print ("you know, this reminds me of that one time I was at the zoo")
+    print ("it was nice that day!")
+    print ("On a related note, I had some beans once")
+    print ("They were ok")
+
+    return
+
+
+
+
+
 
 def interactchoice():
     global setchapter
@@ -131,6 +140,9 @@ def helpcommands():
     print ("'happiness' - opens your happiness bar")
     return
 
+def easteregg0():
+    print ("yes")
+    return()
 
 def inventoryuser2():
     line()
@@ -391,8 +403,8 @@ def room2options(room2):
         helpcommands()
     elif room2 == "happiness":
         happinessbar()
-    elif room2 == "debughornet":
-        debugmode()
+    elif room2 == "nosargent":
+        easteregg0()
     else:
         incorrectnarration()
         
@@ -417,14 +429,10 @@ def room3options(room3):
         givehint()
     elif room3 == "interact":
         interactchoice3()
-    elif room3 == "debughornet":
-        debugmode()
+    elif room3 == "lizard":
+        easteregg1()
     else:
         incorrectnarration()
-
-
-
-
 
 
 keeploop = 10
@@ -433,11 +441,6 @@ keeploop3 = 21
 keeploop4 = 31
 
 
-
-
-
-
-#So mr narrator man starts sad. Goal is to get him happy by the end of the game
 print ("Our story starts here")
 print ("God I hate it when storys start like that")
 print ("Let's just get this first part")
@@ -447,7 +450,7 @@ print (name, "? Thats rather strange")
 time.sleep(1)
 print ("Anyhow," , name, ",lets continue on")
 time.sleep(2)
-#Yeah so CHP 1 starts. Just collect thingys for now
+
 print ("_______________________________________________________________________________________________")
 print ("(  ____ \|\     /|(  ___  )(  ____ )\__   __/(  ____ \(  ____ )     (  ___  )( (    /|(  ____ |")
 print ("| (    \/| )   ( || (   ) || (    )|   ) (   | (    \/| (    )|     | (   ) ||  \  ( || (    \/")
@@ -526,8 +529,6 @@ print ("  / ____/ / / /   |  / __ \/_  __/ ____/ __ \   /_  __/ |     / / __ ]")
 print (" / /   / /_/ / /| | / /_/ / / / / __/ / /_/ /    / /  | | /| / / / / /")
 print ("/ /___/ __  / ___ |/ ____/ / / / /___/ _, _/    / /   | |/ |/ / /_/ / ")
 print ("\____/_/ /_/_/  |_/_/     /_/ /_____/_/ |_|    /_/    |__/|__/\____/ ")
-#LOTS OF BAD STUFF HAPPEN
-#just deimate happniess here
 ominoustalk("So a wonderful journey you had!")
 print ("New commands unlocked!")
 print ("Inventory - see what you are currently holding")
@@ -551,7 +552,6 @@ print ("█   ▀  ██▀▀█ █▄▄█ █▀▀▀      █    ██�
 print ("█▄  ▄▀ █   █ █  █ █        █     █▄   ▄▀ █  █         █    █   █ █  █  █▄   ▄▀ █▄   ▄▀ ")
 print ("▀███▀     █     █  █      ▀      ▀███▀     █         ▀        █    █   ▀███▀   ▀███▀   ")
 print ("         ▀     █    ▀                     ▀                  ▀    ▀                    ")
-#Gain some back, not too much though
 print ("This is probably the last room!")
 
 
@@ -602,13 +602,3 @@ while endgame == False:
     else:
         print ("go on!")
         print ("open the box!")
-
-
-
-#print ("   __  _ __  _   ___  _____ ___  ___    ____  _   _ __ ___ ")
-#print (" ,'_/ /// /.' \ / o |/_  _// _/ / o |  / __/,' \ /// // o |")
-#print ("/ /_ / ` // o // _,'  / / / _/ /  ,'  / _/ / o |/ U //  ,'")
-#print ("|__//_n_//_n_//_/    /_/ /___//_/`_\ /_/   |_,' \_,'/_/`_|")
-#Conclude the game, all those things, dont affect the score at all
-#DLC will come at later date
-#TBA
